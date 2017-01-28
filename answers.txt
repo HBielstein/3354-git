@@ -1,0 +1,6 @@
+(a) 8 commits.
+(b) January 24th, 2017.
+(c) git log is used to see all the changes leading up to the current branch, git status is for seeing everything changed before the most recent commit.
+(d) An untracked file is being newly introduced to an index at this commit, while an unstaged file is a file that has some version in the index, but is missing changes from the version in the index.
+(e) git reset undoes commits or staging to correct mistakes, while git checkout changes the currently accessed branch (or creates a branch and changes to it if you use the suffix: -b <branch name>).
+(f) It de-indexes the uncommitted changes as they are "replaced" by the pulled files.  They are technically still accessable, just not without effort, since it is not indexed anymore in git.
