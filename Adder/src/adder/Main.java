@@ -13,8 +13,13 @@ public class Main {
 
     private static int addArguments(String[] args) {
         int result = 0;
-        for (int i = 0; i < args.length(); i++){
-            result += Integer.valueOf(args[i]);
+        int i = 0;
+        if (args[0].equals("-")) {
+            i = 1;
+            mod = -1;
+        }
+        for (; i < args.length(); i++){
+            result += (Integer.valueOf(args[i]) * mod);
         }
         return result;
     }
