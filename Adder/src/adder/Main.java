@@ -6,8 +6,10 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
+        } catch (NumberFormatException e) {
+            System.err.println("Please provide integer numbers specifically");
         } catch (Exception e) {
-            System.err.println("Please provide integers to add");
+            System.err.println("Please provide integer numbers, not symbols");
         }
     }
 
